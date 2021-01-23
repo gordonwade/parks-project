@@ -2,11 +2,16 @@
 
 ### US National Parks
 
-Visualization Fall 2020 Course Project
+Visualization Fall 2020 Course Final Project
 
 ---
 
-Please view our project materials at the following locations.
+This repository contains a fork of our final project for CS171. The purpose of this fork is for additional personal 
+experimentation and development, without disturbing the original state of the completed project. To view this project in
+its current state, please visit: 
+[https://gordonwade.github.io/parks-project/presentation/](https://gordonwade.github.io/parks-project/presentation/) 
+
+To view the original project materials, please see:
 
 Website: [https://tashrifbillah.github.io/vis-final-project/presentation/](https://tashrifbillah.github.io/vis-final-project/presentation/)
 
