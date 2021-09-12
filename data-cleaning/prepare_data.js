@@ -32,6 +32,7 @@ const TABLE_IDS = {
   "Mesa Verde *":"BE3A981E-BB55-474D-8A0E-D711408682DC",
   "Mount Rainier":"07229CB8-8533-4669-B614-2B884779DD93",
   "North Cascades":"80EB184D-4B6D-4AD2-B6E2-CAAD6312B27D",
+  "New River Gorge":"28F155F2-5116-4E4F-9E21-E8CBCFA5FF49",
   "Olympic":"81CFE898-AD06-4C0D-8A9B-C8D356273F0D",
   "Petrified Forest":"1ABD0EFF-AC09-4EA1-8CC1-2351A3E160D0",
   "Rocky Mountain":"67A56B17-F533-4A56-B2DA-26091C6AD295",
@@ -135,6 +136,7 @@ const CSV_TO_WIKI_NAMES = {
   "Mammoth Cave NP": "Mammoth Cave",
   "Mesa Verde NP": "Mesa Verde *",
   "Mount Rainier NP": "Mount Rainier",
+  "New River Gorge NR": "New River Gorge",
   "North Cascades NP": "North Cascades",
   "Olympic NP": "Olympic",
   "Petrified Forest NP": "Petrified Forest",
@@ -187,7 +189,8 @@ async function getFinalResults() {
 
 
   allParks = await d3.json("all_parks.json", row => row)
-  filteredParks = [...allParks]
+  console.log(typeof(allParks))
+//  filteredParks = [...allParks]
   const parksById = allParks.data.reduce((obj, r) => ({ ...obj, [r.id]: r }), {})
 
   const csvResultsById = csvResults.reduce((obj, r) => ({ ...obj, [r.id]: r }), {})
