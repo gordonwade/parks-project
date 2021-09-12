@@ -80,9 +80,9 @@ def write_json():
 
     # read json data
     with open('../presentation/data/cleaned_data.json', 'rb') as f:
-        data_json= json.load(f)
+        data_json = json.load(f)
 
-    json_parks= [obj['park'] for obj in data_json]
+    json_parks = [obj['park'] for obj in data_json]
 
     # insert monthly statistics in csv
     for p in Parks:

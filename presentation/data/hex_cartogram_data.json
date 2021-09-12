@@ -365,7 +365,7 @@
     "shared_hex_locations": [],
     "shared_hex_orientation": "",
     "label_location": [20, 9],
-    "has_parks": false
+    "has_parks": true
   },
   {
     "name": "DE",
